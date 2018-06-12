@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ShedApp</title>
+    <link href="../src/style.css" rel="stylesheet">
+<link href="main.css" rel="stylesheet"></head>
+<body>
+<!--Header start-->
+<header class="el-header">
+    <div class="el-tabs el-tabs--card el-tabs--top">
+        <div class="el-tabs__header is-top">
+            <div class="el-tabs__nav-wrap is-top">
+                <div class="el-tabs__nav-scroll">
+                    <div role="tablist" class="el-tabs__nav">
+                        <div id="tab-0" aria-controls="pane-0" role="tab" tabindex="0"
+                             class="el-tabs__item is-top header-style">
+                            <a class="nav-link" href="style-page.html">STYLE</a>
+                        </div>
+                        <div id="tab-1" aria-controls="pane-1" role="tab"
+                             class="el-tabs__item is-top header-buildings-packages">
+                            <a class="nav-link" href="building-packages.html">BUILDINGS PACKAGES</a>
+                        </div>
+                        <div id="tab-2" aria-controls="pane-2" role="tab"
+                             class="el-tabs__item is-top is-active header-my-building">
+                            <a class="nav-link" href="my-building-door-options.html">MY BUIILDING</a>
+                        </div>
+                    </div>
+                    <div class="navbar-info">
+                        <div>
+                            <a class="navbar-info__link" href="">LOGIN</a>
+                            <a class="navbar-info__link" href="">SAVE ORDER</a>
+                            <a class="navbar-info__link" href="">LOAD ORDER</a>
+                        </div>
+                        <div>
+                            <p class="navbar-info__total">TOTAL: $10,000</p>
+                        </div>
+                    </div>
+                    <div class="navbar-review-order">
+                        <button type="button" class="el-button el-button--primary navbar-review-order__button">
+                            <span>REVIEW ORDER</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--Header end-->
+
+<!--Order Information Dialog Start-->
+<div class="el-dialog__wrapper el-dialog__wrapper--visible">
+    <div class="el-dialog review-order-dialog el-dialog--center">
+        <div class="el-dialog__header">
+            <span class="el-dialog__title">
+                <a class="dialog-title__link" href="">
+                    <button type="button" class="el-button el-button--text">
+                        <span>Building Summary</span>
+                    </button>
+                </a>
+                <a class="dialog-title__link" href="">
+                    <button type="button" class="el-button el-button--text">
+                        <span>Order Information</span>
+                    </button>
+                </a>
+                <a class="dialog-title__link" href="">
+                    <button type="button" class="el-button el-button--text">
+                        <span>Purchase Method</span>
+                    </button>
+                </a>
+                <a class="dialog-title__link" href="">
+                    <button type="button" class="el-button el-button--text">
+                        <span>Signature and Payment</span>
+                    </button>
+                </a>
+            </span>
+            <button type="button" aria-label="Close" class="el-dialog__headerbtn">
+                <i class="el-dialog__close el-icon el-icon-close"></i>
+            </button>
+        </div>
+        <div class="el-dialog__body review-order-dialog__body review-order-dialog__body--visible">
+            <h2 class="dialog-body__top-header">Order Information</h2>
+            <div class="el-row">
+                <div class="el-col el-col-12">
+                    <div class="grid-content bg-purple">
+                        <p class="order-information__title">Where will we be delivering this building?</p>
+                    </div>
+                </div>
+                <div class="el-col el-col-12">
+                    <div class="grid-content bg-purple">
+                        <div class="order-information__top-button">
+                            <button type="button" class="el-button el-button--primary is-plain">
+                                <span>Verify location accessibility</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="el-col el-col-24">
+                    <div class="grid-content bg-purple">
+                        <div class="order-information-location">
+                            <span class="order-information-location__title">Address</span>
+                            <span class="order-information-location__value">9999 W Oak Street</span>
+                        </div>
+                        <div class="order-information-location">
+                            <span class="order-information-location__title">City</span>
+                            <span class="order-information-location__value">Phoenix</span>
+                        </div>
+                        <div class="order-information-location">
+                            <span class="order-information-location__title">State</span>
+                            <div class="el-select">
+                                <div class="el-select">
+                                    <div class="el-input el-input--suffix">
+                                        <input type="text" autocomplete="off" placeholder="Arizona" readonly="readonly"
+                                               class="el-input__inner order-information__select">
+                                        <span class="el-input__suffix">
+                                            <span class="el-input__suffix-inner">
+                                                <i class="el-select__caret el-input__icon el-icon-arrow-up"></i>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-information-location">
+                            <span class="order-information-location__title">Zip</span>
+                            <span class="order-information-location__value">85000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="el-col el-col-12">
+                    <div class="grid-content bg-purple order-options-values">
+                        <div class="order-options-block">
+                            <span class="order-options-block__title">Total Building Price</span>
+                            <span class="order-options-block__value">$2350.00</span>
+                        </div>
+                        <div class="order-options-block">
+                            <span class="order-options-block__title">Order Options</span>
+                            <span class="order-options-block__value">$150.00</span>
+                        </div>
+                        <div class="order-options-block">
+                            <span class="order-options-block__title">Sub-total</span>
+                            <span class="order-options-block__value">$2500.00</span>
+                        </div>
+                        <div class="order-options-block">
+                            <span class="order-options-block__title">Sales tax</span>
+                            <span class="order-options-block__value">8.6%</span>
+                        </div>
+                        <div class="order-options-block">
+                            <span class="order-options-block__title">Total Order Amount</span>
+                            <span class="order-options-block__value">$2715.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="el-col el-col-12">
+                    <div class="grid-content bg-purple">
+                        <div class="order-information__middle-button">
+                            <button type="button" class="el-button el-button--primary is-plain">
+                                <span>Order Options</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="el-col el-col-24">
+                    <div class="grid-content bg-purple order-information-estimated-delivery-period">
+                        <p class="order-information-estimated-delivery-period__title">Estimated Delivery Period</p>
+                        <div>
+                            <span class="order-information-estimated-delivery-period__value">06/21/2018</span>
+                            <span class="order-information-estimated-delivery-period__value">06/28/2018</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="el-col el-col-24">
+                    <div class="grid-content bg-purple">
+                        <p class="order-information__bottom-header">Please add any special instructions for the delivery
+                            driver</p>
+                        <span>The location can be difficult to find. Please call before you arrive.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="el-dialog__footer">
+            <p class="order-information__bottom-header">Please select a purchase method</p>
+            <button type="button" class="el-button el-button--primary">
+                <span>Purchase Outright</span>
+            </button>
+            <button type="button" class="el-button el-button--primary">
+                <span>Rent-to-Own</span>
+            </button>
+        </div>
+    </div>
+</div>
+<!--Order Information Dialog End-->
+<script type="text/javascript" src="bundle.js"></script></body>
+</html>

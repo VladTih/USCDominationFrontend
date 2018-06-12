@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ShedApp</title>
+    <link href="../src/style.css" rel="stylesheet">
+</head>
+<body>
+<!--Header start-->
+<header class="el-header">
+    <div class="el-tabs el-tabs--card el-tabs--top">
+        <div class="el-tabs__header is-top">
+            <div class="el-tabs__nav-wrap is-top">
+                <div class="el-tabs__nav-scroll">
+                    <div role="tablist" class="el-tabs__nav">
+                        <div id="tab-0" aria-controls="pane-0" role="tab" tabindex="0"
+                             class="el-tabs__item is-top header-style">
+                            <a class="nav-link" href="style-page.html">STYLE</a>
+                        </div>
+                        <div id="tab-1" aria-controls="pane-1" role="tab"
+                             class="el-tabs__item is-top header-buildings-packages">
+                            <a class="nav-link" href="building-packages.html">BUILDINGS PACKAGES</a>
+                        </div>
+                        <div id="tab-2" aria-controls="pane-2" role="tab"
+                             class="el-tabs__item is-top is-active header-my-building">
+                            <a class="nav-link" href="my-building-door-options.html">MY BUIILDING</a>
+                        </div>
+                    </div>
+                    <div class="navbar-info">
+                        <div>
+                            <a class="navbar-info__link" href="">LOGIN</a>
+                            <a class="navbar-info__link" href="">SAVE ORDER</a>
+                            <a class="navbar-info__link" href="">LOAD ORDER</a>
+                        </div>
+                        <div>
+                            <p class="navbar-info__total">TOTAL: $10,000</p>
+                        </div>
+                    </div>
+                    <div class="navbar-review-order">
+                        <button type="button" class="el-button el-button--primary navbar-review-order__button">
+                            <span>REVIEW ORDER</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--Header end-->
+
+<!--Verify location accessibility Start-->
+<div class="el-dialog__wrapper verify-location-modal el-dialog__wrapper--visible">
+    <div class="el-dialog el-dialog--center">
+        <div class="el-dialog__header"><span class="el-dialog__title">Verify location accessibility</span>
+            <button type="button" aria-label="Close" class="el-dialog__headerbtn">
+                <i class="el-dialog__close el-icon el-icon-close"></i>
+            </button>
+        </div>
+        <div class="el-dialog__body">
+            <div class="el-row">
+                <div class="el-col el-col-24">
+                    <div class="grid-content bg-purple">
+                        <label role="checkbox" class="el-checkbox">
+                            <span aria-checked="mixed" class="el-checkbox__input">
+                                <span class="el-checkbox__inner"></span>
+                                <input type="checkbox" aria-hidden="true" class="el-checkbox__original" value="single-door">
+                            </span>
+                            <span class="el-checkbox__label">Level and compact pad</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="el-col el-col-24">
+                    <div class="grid-content bg-purple">
+                        <label role="checkbox" aria-checked="true" class="el-checkbox is-checked">
+                            <span aria-checked="mixed" class="el-checkbox__input is-checked">
+                                <span class="el-checkbox__inner"></span>
+                                <input type="checkbox" aria-hidden="true" class="el-checkbox__original" value="double doors">
+                            </span>
+                            <span class="el-checkbox__label">Soft when wet</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="el-col el-col-24">
+                    <div class="grid-content bg-purple">
+                        <label role="checkbox" class="el-checkbox">
+                            <span aria-checked="mixed" class="el-checkbox__input">
+                                <span class="el-checkbox__inner"></span>
+                                <input type="checkbox" aria-hidden="true" class="el-checkbox__original" value="garage doors">
+                            </span>
+                            <span class="el-checkbox__label">Must cross neighboring property</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="el-col el-col-24">
+                    <div class="grid-content bg-purple">
+                        <h4>I verify that the proposed location for my portable building is accessible</h4>
+                        <span>
+                            Your site must be accessible for our delivery equipment, this typically
+                        requires 2' of clearance for all building dimensions with few exceptions.
+                        <b>You will be responsible for a delivery fee if your site is inaccessible
+                            and we are unable to deliver your building.</b>
+                            Please do not hesitate to contact
+                            us if you have any questions or concerns.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="el-dialog__footer">
+            <span class="dialog-footer">
+                <button type="button" class="el-button el-button--primary">
+                    <span>Verify</span>
+                </button>
+            </span>
+        </div>
+    </div>
+</div>
+<!--Verify location accessibility End-->
+</body>
+</html>

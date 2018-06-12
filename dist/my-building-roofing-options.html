@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ShedApp</title>
+    <link href="../src/style.css" rel="stylesheet">
+<link href="main.css" rel="stylesheet"></head>
+<body>
+<!--Header start-->
+<header class="el-header">
+    <div class="el-tabs el-tabs--card el-tabs--top">
+        <div class="el-tabs__header is-top">
+            <div class="el-tabs__nav-wrap is-top">
+                <div class="el-tabs__nav-scroll">
+                    <div role="tablist" class="el-tabs__nav">
+                        <div id="tab-0" aria-controls="pane-0" role="tab" tabindex="0"
+                             class="el-tabs__item is-top header-style">
+                            <a class="nav-link" href="style-page.html">STYLE</a>
+                        </div>
+                        <div id="tab-1" aria-controls="pane-1" role="tab" 
+                             class="el-tabs__item is-top header-buildings-packages">
+                            <a class="nav-link" href="building-packages.html">BUILDINGS PACKAGES</a>
+                        </div>
+                        <div id="tab-2" aria-controls="pane-2" role="tab" 
+                             class="el-tabs__item is-top is-active header-my-building">
+                            <a class="nav-link" href="my-building-door-options.html">MY BUIILDING</a>
+                        </div>
+                    </div>
+                    <div class="navbar-info">
+                        <div>
+                            <a class="navbar-info__link" href="">LOGIN</a>
+                            <a class="navbar-info__link" href="">SAVE ORDER</a>
+                            <a class="navbar-info__link" href="">LOAD ORDER</a>
+                        </div>
+                        <div>
+                            <p class="navbar-info__total">TOTAL: $10,000</p>
+                        </div>
+                    </div>
+                    <div class="navbar-review-order">
+                        <button type="button" class="el-button el-button--primary navbar-review-order__button">
+                            <span>REVIEW ORDER</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--Header end-->
+<main class="el-main">
+    <div class="el-row">
+        <!--Options Area Start-->
+        <div class="el-col el-col-4">
+            <div class="grid-content bg-purple">
+                <ul role="menubar" class="el-menu-vertical-demo el-menu">
+                    <li role="menuitem" class="el-menu-item">
+                        <span>Door Options</span>
+                    </li>
+                    <li role="menuitem" class="el-menu-item is-active">
+                        <span>Roofing Options</span>
+                    </li>
+                    <li role="menuitem" class="el-menu-item">
+                        <span>Option Category</span>
+                    </li>
+                    <li role="menuitem" class="el-menu-item">
+                        <span>Option Category</span>
+                    </li>
+                    <li role="menuitem" class="el-menu-item">
+                        <span>Option Category</span>
+                    </li>
+                    <li role="menuitem" class="el-menu-item">
+                        <span>Option Category</span>
+                    </li>
+                    <li role="menuitem" class="el-menu-item">
+                        <span>Option Category</span>
+                    </li>
+                    <li role="menuitem" class="el-menu-item">
+                        <span>Option Category</span>
+                    </li>
+                    <li role="menuitem" class="el-menu-item">
+                        <span>Option Category</span>
+                    </li>
+                    <li role="menuitem" class="el-menu-item">
+                        <span>Option Category</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--Options Area End-->
+
+        <!--Slider Start-->
+        <div class="el-col el-col-20">
+            <div class="grid-content bg-purple">
+                <div class="slider">
+                    <button type="button" class="el-button el-button--text">
+                        <i class="el-icon-minus"></i>
+                    </button>
+                    <div class="el-slider__runway">
+                        <div class="el-slider__bar"></div>
+                        <div tabindex="0" class="el-slider__button-wrapper">
+                            <div class="el-slider__button el-tooltip" aria-describedby="el-tooltip-3890" tabindex="0"></div>
+                        </div>
+                    </div>
+                    <button type="button" class="el-button el-button--text">
+                        <i class="el-icon-plus"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!--Slider End-->
+
+        <!--Work area Start-->
+        <div class="el-col el-col-20">
+            <div class="grid-content bg-purple">
+                <div class="image-area">
+                    <img class="image-area__image" src="../src/images/shed.png">
+                </div>
+            </div>
+        </div>
+        <!--Work area End-->
+        <div class="el-col el-col-24">
+            <div class="grid-content bg-purple">
+                <div class="bottom-option-block">
+                    <!--Door Options Start-->
+                    <div class="bottom-option-block__door-filter">
+                        <div class="el-col el-col-4 filter-block">
+                            <p class="door-filter__header">Door Filters</p>
+                            <div class="filters">
+                                <label role="checkbox" class="el-checkbox">
+                                    <span aria-checked="mixed" class="el-checkbox__input">
+                                        <span class="el-checkbox__inner"></span>
+                                        <input type="checkbox" aria-hidden="true" class="el-checkbox__original" value="single-door">
+                                    </span>
+                                    <span class="el-checkbox__label">Single Doors</span>
+                                </label>
+                                <label role="checkbox" aria-checked="true" class="el-checkbox is-checked">
+                                    <span aria-checked="mixed" class="el-checkbox__input is-checked">
+                                        <span class="el-checkbox__inner"></span>
+                                        <input type="checkbox" aria-hidden="true" class="el-checkbox__original" value="double doors">
+                                    </span>
+                                    <span class="el-checkbox__label">Double Doors</span>
+                                </label>
+                                <label role="checkbox" class="el-checkbox">
+                                    <span aria-checked="mixed" class="el-checkbox__input">
+                                        <span class="el-checkbox__inner"></span>
+                                        <input type="checkbox" aria-hidden="true" class="el-checkbox__original" value="garage doors">
+                                    </span>
+                                    <span class="el-checkbox__label">Garage Doors</span>
+                                </label>
+                                <label role="checkbox" class="el-checkbox">
+                                    <span aria-checked="mixed" class="el-checkbox__input">
+                                        <span class="el-checkbox__inner"></span>
+                                        <input type="checkbox" aria-hidden="true" class="el-checkbox__original" value="sliding doors">
+                                    </span>
+                                    <span class="el-checkbox__label">Sliding Doors</span>
+                                </label>
+                                <label role="checkbox" class="el-checkbox">
+                                    <span aria-checked="mixed" class="el-checkbox__input">
+                                        <span class="el-checkbox__inner"></span>
+                                        <input type="checkbox" aria-hidden="true" class="el-checkbox__original" value="pet doors">
+                                    </span>
+                                    <span class="el-checkbox__label">Pet Doors</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="el-col el-col-20">
+                            <div class="bottom-option-area">
+                                <div class="bottom-option-area__block">
+                                    <div class="block__image"></div>
+                                    <p class="block__title">Option name</p>
+                                </div>
+                                <div class="bottom-option-area__block">
+                                    <div class="block__image"></div>
+                                    <p class="block__title">Option name</p>
+                                </div>
+                                <div class="bottom-option-area__block">
+                                    <div class="block__image"></div>
+                                    <p class="block__title">Option name</p>
+                                </div>
+                                <div class="bottom-option-area__block">
+                                    <div class="block__image"></div>
+                                    <p class="block__title">Option name</p>
+                                </div>
+                                <div class="bottom-option-area__block">
+                                    <div class="block__image"></div>
+                                    <p class="block__title">Option name</p>
+                                </div>
+                                <div class="bottom-option-area__block">
+                                    <div class="block__image"></div>
+                                    <p class="block__title">Option name</p>
+                                </div>
+                                <div class="bottom-option-area__block">
+                                    <div class="block__image"></div>
+                                    <p class="block__title">Option name</p>
+                                </div>
+                                <div class="bottom-option-area__block">
+                                    <div class="block__image"></div>
+                                    <p class="block__title">Option name</p>
+                                </div>
+                                <div class="bottom-option-area__block">
+                                    <div class="block__image"></div>
+                                    <p class="block__title">Option name</p>
+                                </div>
+                            </div>
+                            <span class="dialog-footer">
+                                <button type="button" class="el-button el-button--text dialog-footer__prev-button">PREVIOUS</button>
+                                <div class="dialog-footer__select-block is-active"></div>
+                                <div class="dialog-footer__select-block"></div>
+                                <div class="dialog-footer__select-block"></div>
+                                <div class="dialog-footer__select-block"></div>
+                                <div class="dialog-footer__select-block"></div>
+                                <button type="button" class="el-button el-button--text dialog-footer__next-button">NEXT</button>
+                            </span>
+                        </div>
+                    </div>
+                    <!--Door Filters End-->
+
+                    <!--Roofing Options Start-->
+                    <div class="bottom-option-block__roofing bottom-option-block__roofing--visible">
+                        <div class="el-col el-col-8">
+                            <p>Select Material</p>
+                            <div class="select-material">
+                                <div class="select-material__block">
+                                    <div class="block-image"></div>
+                                    <p class="block-title">Material Name</p>
+                                </div>
+                                <div class="select-material__block">
+                                    <div class="block-image"></div>
+                                    <p class="block-title">Material Name</p>
+                                </div>
+                                <div class="select-material__block">
+                                    <div class="block-image"></div>
+                                    <p class="block-title">Material Name</p>
+                                </div>
+                                <div class="select-material__block">
+                                    <div class="block-image"></div>
+                                    <p class="block-title">Material Name</p>
+                                </div>
+                                <div class="select-material__block">
+                                    <div class="block-image"></div>
+                                    <p class="block-title">Material Name</p>
+                                </div>
+                                <div class="select-material__block">
+                                    <div class="block-image"></div>
+                                    <p class="block-title">Material Name</p>
+                                </div>
+                                <div class="select-material__block">
+                                    <div class="block-image"></div>
+                                    <p class="block-title">Material Name</p>
+                                </div>
+                                <div class="select-material__block">
+                                    <div class="block-image"></div>
+                                    <p class="block-title">Material Name</p>
+                                </div>
+                                <div class="select-material__block">
+                                    <div class="block-image"></div>
+                                    <p class="block-title">Material Name</p>
+                                </div>
+                                <div class="select-material__block">
+                                    <div class="block-image"></div>
+                                    <p class="block-title">Material Name</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="el-col el-col-1">
+                            <div class="bottom-option-block__line" style=""></div>
+                        </div>
+                        <div class="el-col el-col-14">
+                            <p>Select Color</p>
+                            <div class="select-color">
+                                <div class="select-color__block">
+                                    <div class="block-image"></div>
+                                    <p class="block-title">Color Name</p>
+                                </div>
+                                <div class="select-color__block">
+                                    <div class="block-image"></div>
+                                    <p class="block-title">Color Name</p>
+                                </div>
+                                <div class="select-color__block">
+                                    <div class="block-image"></div>
+                                    <p class="block-title">Color Name</p>
+                                </div>
+                                <div class="select-color__block">
+                                    <div class="block-image"></div>
+                                    <p class="block-title">Color Name</p>
+                                </div>
+                                <div class="select-color__block">
+                                    <div class="block-image"></div>
+                                    <p class="block-title">Color Name</p>
+                                </div>
+                                <div class="select-color__block">
+                                    <div class="block-image"></div>
+                                    <p class="block-title">Color Name</p>
+                                </div>
+                                <div class="select-color__block">
+                                    <div class="block-image"></div>
+                                    <p class="block-title">Color Name</p>
+                                </div>
+                                <div class="select-color__block">
+                                    <div class="block-image"></div>
+                                    <p class="block-title">Color Name</p>
+                                </div>
+                                <div class="select-color__block">
+                                    <div class="block-image"></div>
+                                    <p class="block-title">Color Name</p>
+                                </div>
+                                <div class="select-color__block">
+                                    <div class="block-image"></div>
+                                    <p class="block-title">Color Name</p>
+                                </div>
+                                <div class="select-color__block">
+                                    <div class="block-image"></div>
+                                    <p class="block-title">Color Name</p>
+                                </div>
+                                <div class="select-color__block">
+                                    <div class="block-image"></div>
+                                    <p class="block-title">Color Name</p>
+                                </div>
+                                <div class="select-color__block">
+                                    <div class="block-image"></div>
+                                    <p class="block-title">Color Name</p>
+                                </div>
+                                <div class="select-color__block">
+                                    <div class="block-image"></div>
+                                    <p class="block-title">Color Name</p>
+                                </div>
+                                <div class="select-color__block">
+                                    <div class="block-image"></div>
+                                    <p class="block-title">Color Name</p>
+                                </div>
+                                <div class="select-color__block">
+                                    <div class="block-image"></div>
+                                    <p class="block-title">Color Name</p>
+                                </div>
+                                <div class="select-color__block">
+                                    <div class="block-image"></div>
+                                    <p class="block-title">Color Name</p>
+                                </div>
+                                <div class="select-color__block">
+                                    <div class="block-image"></div>
+                                    <p class="block-title">Color Name</p>
+                                </div>
+                                <div class="select-color__block">
+                                    <div class="block-image"></div>
+                                    <p class="block-title">Color Name</p>
+                                </div>
+                                <div class="select-color__block">
+                                    <div class="block-image"></div>
+                                    <p class="block-title">Color Name</p>
+                                </div>
+                                <div class="select-color__block">
+                                    <div class="block-image"></div>
+                                    <p class="block-title">Color Name</p>
+                                </div>
+                                <div class="select-color__block">
+                                    <div class="block-image"></div>
+                                    <p class="block-title">Color Name</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Roofing Options End-->
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script type="text/javascript" src="bundle.js"></script></body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ShedApp</title>
+    <link href="../src/style.css" rel="stylesheet">
+</head>
+<body>
+<!--Header start-->
+<header class="el-header">
+    <div class="el-tabs el-tabs--card el-tabs--top">
+        <div class="el-tabs__header is-top">
+            <div class="el-tabs__nav-wrap is-top">
+                <div class="el-tabs__nav-scroll">
+                    <div role="tablist" class="el-tabs__nav">
+                        <div id="tab-0" aria-controls="pane-0" role="tab" tabindex="0"
+                             class="el-tabs__item is-top header-style">
+                            <a class="nav-link" href="style-page.html">STYLE</a>
+                        </div>
+                        <div id="tab-1" aria-controls="pane-1" role="tab"
+                             class="el-tabs__item is-top header-buildings-packages">
+                            <a class="nav-link" href="building-packages.html">BUILDINGS PACKAGES</a>
+                        </div>
+                        <div id="tab-2" aria-controls="pane-2" role="tab"
+                             class="el-tabs__item is-top is-active header-my-building">
+                            <a class="nav-link" href="my-building-door-options.html">MY BUIILDING</a>
+                        </div>
+                    </div>
+                    <div class="navbar-info">
+                        <div>
+                            <a class="navbar-info__link" href="">LOGIN</a>
+                            <a class="navbar-info__link" href="">SAVE ORDER</a>
+                            <a class="navbar-info__link" href="">LOAD ORDER</a>
+                        </div>
+                        <div>
+                            <p class="navbar-info__total">TOTAL: $10,000</p>
+                        </div>
+                    </div>
+                    <div class="navbar-review-order">
+                        <button type="button" class="el-button el-button--primary navbar-review-order__button">
+                            <span>REVIEW ORDER</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--Header end-->
+
+<!--Building Summary Dialog Start-->
+<div class="el-dialog__wrapper el-dialog__wrapper--visible">
+    <div class="el-dialog review-order-dialog el-dialog--center">
+        <div class="el-dialog__header">
+            <span class="el-dialog__title">
+                <a class="dialog-title__link" href="">
+                    <button type="button" class="el-button el-button--text">
+                        <span>Building Summary</span>
+                    </button>
+                </a>
+                <a class="dialog-title__link" href="">
+                    <button type="button" class="el-button el-button--text">
+                        <span>Order Information</span>
+                    </button>
+                </a>
+                <a class="dialog-title__link" href="">
+                    <button type="button" class="el-button el-button--text">
+                        <span>Purchase Method</span>
+                    </button>
+                </a>
+                <a class="dialog-title__link" href="">
+                    <button type="button" class="el-button el-button--text">
+                        <span>Signature and Payment</span>
+                    </button>
+                </a>
+            </span>
+            <button type="button" aria-label="Close" class="el-dialog__headerbtn">
+                <i class="el-dialog__close el-icon el-icon-close"></i>
+            </button>
+        </div>
+        <div class="el-dialog__body review-order-dialog__body review-order-dialog__body--visible">
+            <h2 class="dialog-body__top-header">Building Summary</h2>
+            <div class="building-summary">
+                <div class="building-summary-block">
+                    <p class="building-summary-block__title">Bulding Package</p>
+                    <span class="building-summary-block__value">Custom</span>
+                </div>
+                <div class="building-summary-block">
+                    <p class="building-summary-block__title">Style</p>
+                    <span class="building-summary-block__value">Urban Barn</span>
+                </div>
+                <div class="building-summary-block">
+                    <p class="building-summary-block__title">Model</p>
+                    <span class="building-summary-block__value">8x12x7 Urban Barn</span>
+                </div>
+                <div class="building-summary-block">
+                    <p class="building-summary-block__title">Shell Price</p>
+                    <span class="building-summary-block__value">$2300.00</span>
+                </div>
+                <div class="building-summary-block">
+                    <p class="building-summary-block__title">Siding Color</p>
+                    <span class="building-summary-block__value">Red</span>
+                </div>
+                <div class="building-summary-block">
+                    <p class="building-summary-block__title">Trim Color</p>
+                    <span class="building-summary-block__value">White</span>
+                </div>
+                <div class="building-summary-block">
+                    <p class="building-summary-block__title">Roof Color</p>
+                    <span class="building-summary-block__value">Heritage Black</span>
+                </div>
+            </div>
+            <h3 class="dialog-body__middle-header">Option Price</h3>
+            <div class="option-price">
+                <div class="option-price-block">
+                    <p class="option-price-block__title">3' Shed Door</p>
+                    <span class="option-price-block__value">$100.00</span>
+                </div>
+                <div class="option-price-block">
+                    <p class="option-price-block__title">2x3 Aluminum White Window</p>
+                    <span class="option-price-block__value">$75.00</span>
+                </div>
+                <div class="option-price-block">
+                    <p class="option-price-block__title">...</p>
+                    <span class="option-price-block__value">...</span>
+                </div>
+                <div class="option-price-block">
+                    <p class="option-price-block__title">...</p>
+                    <span class="option-price-block__value">...</span>
+                </div>
+                <div class="option-price-block">
+                    <p class="option-price-block__title">...</p>
+                    <span class="option-price-block__value">...</span>
+                </div>
+                <div class="option-price-block">
+                    <p class="option-price-block__title">...</p>
+                    <span class="option-price-block__value">...</span>
+                </div>
+                <div class="option-price-block">
+                    <p class="option-price-block__title">...</p>
+                    <span class="option-price-block__value">...</span>
+                </div>
+            </div>
+            <div class="total-options">
+                <p class="total-options__title">Total Options</p>
+                <span class="total-options__value">$1200.00</span>
+            </div>
+            <div class="total-building-price">
+                <p class="total-building-price__title">Total Building Price</p>
+                <span class="total-building-price__value">$3500.00</span>
+            </div>
+            <p class="bottom-header">
+                Free standard delivery and setup within 30 miles. Taxes and extra delivery fees are
+                not
+            </p>
+            <p class="bottom-header">Rent-to-own this building starting at $249.00 per</p>
+        </div>
+        <div class="el-dialog__footer">
+            <button type="button" class="el-button el-button--primary">
+                <span>Continue</span>
+            </button>
+        </div>
+    </div>
+</div>
+<!--Building Summary Dialog End-->
+</body>
+</html>

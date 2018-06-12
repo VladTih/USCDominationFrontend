@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ShedApp</title>
+    <link href="../src/style.css" rel="stylesheet">
+<link href="main.css" rel="stylesheet"></head>
+<body>
+<!--Header start-->
+<header class="el-header">
+    <div class="el-tabs el-tabs--card el-tabs--top">
+        <div class="el-tabs__header is-top">
+            <div class="el-tabs__nav-wrap is-top">
+                <div class="el-tabs__nav-scroll">
+                    <div role="tablist" class="el-tabs__nav">
+                        <div id="tab-0" aria-controls="pane-0" role="tab" tabindex="0"
+                             class="el-tabs__item is-top header-style">
+                            <a class="nav-link" href="style-page.html">STYLE</a>
+                        </div>
+                        <div id="tab-1" aria-controls="pane-1" role="tab"
+                             class="el-tabs__item is-top header-buildings-packages">
+                            <a class="nav-link" href="building-packages.html">BUILDINGS PACKAGES</a>
+                        </div>
+                        <div id="tab-2" aria-controls="pane-2" role="tab"
+                             class="el-tabs__item is-top is-active header-my-building">
+                            <a class="nav-link" href="my-building-door-options.html">MY BUIILDING</a>
+                        </div>
+                    </div>
+                    <div class="navbar-info">
+                        <div>
+                            <a class="navbar-info__link" href="">LOGIN</a>
+                            <a class="navbar-info__link" href="">SAVE ORDER</a>
+                            <a class="navbar-info__link" href="">LOAD ORDER</a>
+                        </div>
+                        <div>
+                            <p class="navbar-info__total">TOTAL: $10,000</p>
+                        </div>
+                    </div>
+                    <div class="navbar-review-order">
+                        <button type="button" class="el-button el-button--primary navbar-review-order__button">
+                            <span>REVIEW ORDER</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--Header end-->
+
+<!--RTO Application Renter Information Dialog Start-->
+<div class="el-dialog__wrapper rto-application-dialog el-dialog__wrapper--visible">
+    <div class="el-dialog">
+        <div class="el-dialog__header">
+            <span class="el-dialog__title">
+                <span>JMAG LLC RTO Application</span>
+                <div class="el-button-group">
+                    <button type="button" class="el-button el-button--primary el-button--mini">
+                        <i class="el-icon-arrow-left"></i>
+                        <span>Previous Page</span>
+                    </button>
+                    <button type="button" class="el-button el-button--primary el-button--mini">
+                        <span>Next Page</span>
+                        <i class="el-icon-arrow-right el-icon-right"></i>
+                    </button>
+                </div>
+            </span>
+            <button type="button" class="el-dialog__headerbtn">
+                <i class="el-dialog__close el-icon el-icon-close"></i>
+            </button>
+        </div>
+        <div class="el-dialog__body">
+            <h2 class="rto-application-dialog__body-top-title">Renter Information</h2>
+            <form class="el-form">
+                <div class="el-row">
+                    <div class="el-col el-col-12">
+                        <div class="grid-content bg-purple">
+                            <div class="el-form-item el-form-item--required">
+                                <div class="sub-title">First Name</div>
+                                <div class="el-autocomplete inline-input">
+                                    <div class="el-input">
+                                        <input type="text" placeholder="First Name" class="el-input__inner">
+                                    </div>
+                                    <div class="el-autocomplete-suggestion el-popper">
+                                        <div class="el-scrollbar">
+                                            <div class="el-autocomplete-suggestion__wrap el-scrollbar__wrap el-scrollbar__wrap--hidden-default">
+                                                <ul class="el-scrollbar__view el-autocomplete-suggestion__list"></ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="el-col el-col-12">
+                        <div class="grid-content bg-purple">
+                            <div class="el-form-item el-form-item--required">
+                                <div class="sub-title">Last Name</div>
+                                <div class="el-autocomplete inline-input">
+                                    <div class="el-input">
+                                        <input type="text" placeholder="Last Name" class="el-input__inner">
+                                    </div>
+                                    <div class="el-autocomplete-suggestion el-popper">
+                                        <div class="el-scrollbar">
+                                            <div class="el-autocomplete-suggestion__wrap el-scrollbar__wrap el-scrollbar__wrap--hidden-default">
+                                                <ul class="el-scrollbar__view el-autocomplete-suggestion__list"></ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="el-col el-col-7">
+                        <div class="grid-content bg-purple">
+                            <div class="el-form-item el-form-item--required">
+                                <div class="sub-title">Email</div>
+                                <div class="el-autocomplete inline-input">
+                                    <div class="el-input">
+                                        <input type="text" placeholder="Email" class="el-input__inner">
+                                    </div>
+                                    <div class="el-autocomplete-suggestion el-popper">
+                                        <div class="el-scrollbar">
+                                            <div class="el-autocomplete-suggestion__wrap el-scrollbar__wrap el-scrollbar__wrap--hidden-default">
+                                                <ul class="el-scrollbar__view el-autocomplete-suggestion__list"></ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="el-col el-col-5">
+                        <div class="grid-content bg-purple">
+                            <div class="el-form-item">
+                                <div class="rto-application-dialog__block">
+                                    <label class="el-checkbox is-checked">
+                                    <span class="el-checkbox__input is-checked">
+                                        <span class="el-checkbox__inner"></span>
+                                        <input type="checkbox" class="el-checkbox__original" value="email instead of mail">
+                                    </span>
+                                        <span class="el-checkbox__label">Email instead of Mail?</span>
+                                    </label>
+                                    <span>Email for communications.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="el-col el-col-12">
+                        <div class="grid-content bg-purple">
+                            <div class="el-form-item el-form-item--required">
+                                <div class="sub-title">Phone #</div>
+                                <div class="el-autocomplete inline-input">
+                                    <div class="el-input">
+                                        <input type="tel" placeholder="Phone" class="el-input__inner">
+                                    </div>
+                                    <div class="el-autocomplete-suggestion el-popper">
+                                        <div class="el-scrollbar">
+                                            <div class="el-autocomplete-suggestion__wrap el-scrollbar__wrap el-scrollbar__wrap--hidden-default">
+                                                <ul class="el-scrollbar__view el-autocomplete-suggestion__list"></ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="el-col el-col-8">
+                        <div class="grid-content bg-purple">
+                            <div class="el-form-item el-form-item--required">
+                                <div class="sub-title">Cell #</div>
+                                <div class="el-autocomplete inline-input">
+                                    <div class="el-input">
+                                        <input type="tel" placeholder="Cell Number" class="el-input__inner">
+                                    </div>
+                                    <div class="el-autocomplete-suggestion el-popper">
+                                        <div class="el-scrollbar">
+                                            <div class="el-autocomplete-suggestion__wrap el-scrollbar__wrap el-scrollbar__wrap--hidden-default">
+                                                <ul class="el-scrollbar__view el-autocomplete-suggestion__list"></ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="el-col el-col-4">
+                        <div class="grid-content bg-purple">
+                            <div class="el-form-item">
+                                <div class="rto-application-dialog__block">
+                                    <label class="el-radio">
+                                        <span class="el-radio__input">
+                                            <span class="el-radio__inner"></span>
+                                            <input type="radio" class="el-radio__original" value="1"></span>
+                                        <span class="el-radio__label">Text Yes?</span>
+                                    </label>
+                                    <label class="el-radio is-checked">
+                                        <span class="el-radio__input is-checked">
+                                            <span class="el-radio__inner"></span>
+                                            <input type="radio" class="el-radio__original" value="2">
+                                        </span>
+                                        <span class="el-radio__label">Text No?</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="el-col el-col-8">
+                        <div class="grid-content bg-purple">
+                            <div class="el-form-item">
+                                <div class="sub-title">Cell # (2)</div>
+                                <div class="el-autocomplete inline-input">
+                                    <div class="el-input">
+                                        <input type="tel" placeholder="Cell Number (2)" class="el-input__inner">
+                                    </div>
+                                    <div class="el-autocomplete-suggestion el-popper">
+                                        <div class="el-scrollbar">
+                                            <div class="el-autocomplete-suggestion__wrap el-scrollbar__wrap el-scrollbar__wrap--hidden-default">
+                                                <ul class="el-scrollbar__view el-autocomplete-suggestion__list"></ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="el-col el-col-4">
+                        <div class="grid-content bg-purple">
+                            <div class="el-form-item">
+                                <div class="rto-application-dialog__block">
+                                    <label class="el-radio">
+                                        <span class="el-radio__input">
+                                            <span class="el-radio__inner"></span>
+                                            <input type="radio"class="el-radio__original" value="1"></span>
+                                        <span class="el-radio__label">Text Yes?</span>
+                                    </label>
+                                    <label class="el-radio is-checked">
+                                        <span class="el-radio__input is-checked">
+                                            <span class="el-radio__inner"></span>
+                                            <input type="radio" class="el-radio__original" value="2">
+                                        </span>
+                                        <span class="el-radio__label">Text No?</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="el-col el-col-24">
+                        <div class="grid-content bg-purple">
+                            <div class="el-form-item">
+                                <p>
+                                    1. By choosing Yes, you consent to receive text messages
+                                    sent by an automatic telephone dialing system.
+                                </p>
+                                <p>2. Consent to these terms is not a condition of purchase.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="el-col el-col-24">
+                        <div class="grid-content bg-purple">
+                            <div class="el-form-item">
+                                <div class="el-col el-col-8">
+                                    <div class="grid-content bg-purple">
+                                        <div class="el-form-item">
+                                            <div class="sub-title">Home #</div>
+                                            <div class="el-autocomplete inline-input">
+                                                <div class="el-input">
+                                                    <input type="text" placeholder="Home #" class="el-input__inner">
+                                                </div>
+                                                <div class="el-autocomplete-suggestion el-popper">
+                                                    <div class="el-scrollbar">
+                                                        <div class="el-autocomplete-suggestion__wrap el-scrollbar__wrap el-scrollbar__wrap--hidden-default">
+                                                            <ul class="el-scrollbar__view el-autocomplete-suggestion__list"></ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="el-col el-col-8">
+                        <div class="grid-content bg-purple">
+                            <div class="el-form-item el-form-item--required">
+                                <div class="sub-title">Address</div>
+                                <div class="el-autocomplete inline-input">
+                                    <div class="el-input">
+                                        <input type="text" placeholder="Address" class="el-input__inner">
+                                    </div>
+                                    <div class="el-autocomplete-suggestion el-popper">
+                                        <div class="el-scrollbar">
+                                            <div class="el-autocomplete-suggestion__wrap el-scrollbar__wrap el-scrollbar__wrap--hidden-default">
+                                                <ul class="el-scrollbar__view el-autocomplete-suggestion__list"></ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="el-col el-col-8">
+                        <div class="grid-content bg-purple">
+                            <div class="el-form-item el-form-item--required">
+                                <div class="sub-title">City</div>
+                                <div class="el-autocomplete inline-input">
+                                    <div class="el-input">
+                                        <input type="text" placeholder="City" class="el-input__inner">
+                                    </div>
+                                    <div class="el-autocomplete-suggestion el-popper">
+                                        <div class="el-scrollbar">
+                                            <div class="el-autocomplete-suggestion__wrap el-scrollbar__wrap el-scrollbar__wrap--hidden-default">
+                                                <ul class="el-scrollbar__view el-autocomplete-suggestion__list"></ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="el-col el-col-4">
+                        <div class="grid-content bg-purple">
+                            <div class="el-form-item el-form-item--required">
+                                <span class="select-title">State</span>
+                                <div class="el-select">
+                                    <div class="el-input el-input--suffix">
+                                        <input type="text" placeholder="Select" class="el-input__inner">
+                                        <span class="el-input__suffix">
+                                            <span class="el-input__suffix-inner">
+                                                <i class="el-select__caret el-input__icon el-icon-arrow-up"></i>
+                                            </span>
+                                        </span>
+                                    </div>
+                                    <div class="el-select-dropdown el-popper">
+                                        <div class="el-scrollbar">
+                                            <div class="el-select-dropdown__wrap el-scrollbar__wrap el-scrollbar__wrap--hidden-default">
+                                                <ul class="el-scrollbar__view el-select-dropdown__list">
+                                                    <li class="el-select-dropdown__item">
+                                                        <span>Alabama</span>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span>Alaska</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span>Arizona</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span>Arkansas</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span>California</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="CO">Colorado</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="CT">Connecticut</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="DE">Delaware</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="DC">District Of Columbia</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="FL">Florida</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="GA">Georgia</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="HI">Hawaii</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="ID">Idaho</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="IL">Illinois</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="IN">Indiana</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="IA">Iowa</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="KS">Kansas</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="KY">Kentucky</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="LA">Louisiana</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="ME">Maine</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="MD">Maryland</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="MA">Massachusetts</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="MI">Michigan</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="MN">Minnesota</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="MS">Mississippi</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="MO">Missouri</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="MT">Montana</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="NE">Nebraska</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="NV">Nevada</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="NH">New Hampshire</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="NJ">New Jersey</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="NM">New Mexico</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="NY">New York</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="NC">North Carolina</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="ND">North Dakota</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="OH">Ohio</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="OK">Oklahoma</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="OR">Oregon</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="PA">Pennsylvania</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="RI">Rhode Island</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="SC">South Carolina</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="SD">South Dakota</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="TN">Tennessee</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="TX">Texas</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="UT">Utah</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="VT">Vermont</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="VA">Virginia</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="WA">Washington</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="WV">West Virginia</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="WI">Wisconsin</span>
+                                                    </li>
+                                                    <li class="el-select-dropdown__item">
+                                                        <span value="WY">Wyoming</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="el-col el-col-4">
+                        <div class="grid-content bg-purple">
+                            <div class="el-form-item el-form-item--required">
+                                <div class="sub-title">Zip</div>
+                                <div class="el-autocomplete inline-input small-input">
+                                    <div class="el-input">
+                                        <input type="text" placeholder="Zip" class="el-input__inner">
+                                    </div>
+                                    <div class="el-autocomplete-suggestion el-popper">
+                                        <div class="el-scrollbar">
+                                            <div class="el-autocomplete-suggestion__wrap el-scrollbar__wrap el-scrollbar__wrap--hidden-default">
+                                                <ul class="el-scrollbar__view el-autocomplete-suggestion__list"></ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="el-col el-col-24">
+                        <div class="grid-content bg-purple">
+                            <div class="el-form-item">
+                                <div class="el-col el-col-12">
+                                    <div class="grid-content bg-purple">
+                                        <div class="el-form-item">
+                                            <p>Property Status</p>
+                                            <label class="el-radio is-checked">
+                                                <span class="el-radio__input is-checked">
+                                                    <span class="el-radio__inner"></span>
+                                                    <input type="radio" class="el-radio__original" value="1">
+                                                </span>
+                                                <span class="el-radio__label">Own</span>
+                                            </label>
+                                            <label class="el-radio">
+                                                <span class="el-radio__input">
+                                                    <span class="el-radio__inner"></span>
+                                                    <input type="radio"class="el-radio__original" value="2"></span>
+                                                <span class="el-radio__label">Rent</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="el-col el-col-24">
+                        <div class="grid-content bg-purple">
+                            <h4>Work Information</h4>
+                        </div>
+                    </div>
+                    <div class="el-col el-col-8">
+                        <div class="grid-content bg-purple">
+                            <div class="el-form-item el-form-item--required">
+                                <div class="sub-title">Renter`s Employer</div>
+                                <div class="el-autocomplete inline-input">
+                                    <div class="el-input">
+                                        <input type="text" placeholder="Renter`s Employer" class="el-input__inner">
+                                    </div>
+                                    <div class="el-autocomplete-suggestion el-popper">
+                                        <div class="el-scrollbar">
+                                            <div class="el-autocomplete-suggestion__wrap el-scrollbar__wrap el-scrollbar__wrap--hidden-default">
+                                                <ul class="el-scrollbar__view el-autocomplete-suggestion__list"></ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="el-col el-col-8">
+                        <div class="grid-content bg-purple">
+                            <div class="el-form-item el-form-item--required">
+                                <div class="sub-title">Phone</div>
+                                <div class="el-autocomplete inline-input">
+                                    <div class="el-input">
+                                        <input type="tel" placeholder="Phone" class="el-input__inner">
+                                    </div>
+                                    <div class="el-autocomplete-suggestion el-popper">
+                                        <div class="el-scrollbar">
+                                            <div class="el-autocomplete-suggestion__wrap el-scrollbar__wrap el-scrollbar__wrap--hidden-default">
+                                                <ul class="el-scrollbar__view el-autocomplete-suggestion__list"></ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="el-col el-col-8">
+                        <div class="grid-content bg-purple">
+                            <div class="el-form-item">
+                                <div class="sub-title">Ext</div>
+                                <div class="el-autocomplete inline-input">
+                                    <div class="el-input">
+                                        <input type="text" placeholder="Ext" class="el-input__inner">
+                                    </div>
+                                    <div class="el-autocomplete-suggestion el-popper">
+                                        <div class="el-scrollbar">
+                                            <div class="el-autocomplete-suggestion__wrap el-scrollbar__wrap el-scrollbar__wrap--hidden-default">
+                                                <ul class="el-scrollbar__view el-autocomplete-suggestion__list"></ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="el-col el-col-8">
+                        <div class="grid-content bg-purple">
+                            <div class="el-form-item el-form-item--required">
+                                <div class="sub-title">Renter`s Supervisor</div>
+                                <div class="el-autocomplete inline-input">
+                                    <div class="el-input">
+                                        <input type="text" placeholder="Renter`s Supervisor" class="el-input__inner">
+                                    </div>
+                                    <div class="el-autocomplete-suggestion el-popper">
+                                        <div class="el-scrollbar">
+                                            <div class="el-autocomplete-suggestion__wrap el-scrollbar__wrap el-scrollbar__wrap--hidden-default">
+                                                <ul class="el-scrollbar__view el-autocomplete-suggestion__list"></ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="el-col el-col-8">
+                        <div class="grid-content bg-purple">
+                            <div class="el-form-item el-form-item--required">
+                                <div class="sub-title">Occupation</div>
+                                <div class="el-autocomplete inline-input">
+                                    <div class="el-input">
+                                        <input type="text" placeholder="Occupation" class="el-input__inner">
+                                    </div>
+                                    <div class="el-autocomplete-suggestion el-popper">
+                                        <div class="el-scrollbar">
+                                            <div class="el-autocomplete-suggestion__wrap el-scrollbar__wrap el-scrollbar__wrap--hidden-default">
+                                                <ul class="el-scrollbar__view el-autocomplete-suggestion__list"></ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!--RTO Application Renter Information Dialog End-->
+<script type="text/javascript" src="bundle.js"></script></body>
+</html>
